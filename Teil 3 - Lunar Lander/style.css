@@ -1,0 +1,118 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	background: #333333;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#game-title{
+	position: absolute;
+	width: 1000px;
+	height: 40px;
+	top: calc( 50vh - 340px );
+	left: calc( 50vw - 500px );
+	background-color: #222;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+
+	font-family: Helvetica Neue, sans-serif;
+	font-size: 1.5rem;
+	line-height: 40px;
+	text-align: center;
+	font-weight: 300;
+	color: #ddd;
+}
+
+#game{
+	position: absolute;
+	width: 1000px;
+	height: 600px;
+	top: calc( 50vh - 300px );
+	left: calc( 50vw - 500px );
+	background: linear-gradient(#111, #333);
+	border: 5px solid #222;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+#game-messages{
+	position: absolute;
+	width: 500px;
+	height: 200px;
+	left: calc(50vw - 250px);
+	top: calc(50vh - 100px);
+	display: none;
+	background-color: rgba(255,255,255,0.2);
+	z-index: 11;
+	border-radius: 2px;
+
+	font-family: Helvetica Neue, sans-serif;
+	font-size: 3rem;
+	line-height: 200px;
+	font-weight: 600;
+	text-align: center;
+	color: #222;
+}
+
+#hud{
+	position: absolute;
+	width: 150px;
+	height: 40px;
+	background-color: rgba(255,255,255,0.1);
+	right: 5px;
+	top: 5px;
+	border-radius: 2px;
+
+	font-family: Helvetica Neue, sans-serif;
+	font-size: 1.25rem;
+	color: #efefef;
+	font-weight: 500;
+	line-height: 40px;
+	text-align: center;
+}
+
+p{
+	color: #efefef;
+	font-family: Helvetica Neue, sans-serif;
+	font-weight: 300;
+	font-size: 1.25rem;
+}
+
+#lander {
+	position: absolute;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 35px solid #eee;
+	width: 0;
+	height: 0;
+	left: 100px;
+	top: 100px;
+	transform: rotate(0deg);
+	background-color: transparent;
+	text-align: center;
+	font-size: 2rem;
+	line-height: 0.01rem;
+	text-align: center;
+}
+
+#ground {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 40px;
+	background-color: #777766;
+}
+
+#platform {
+	position: absolute;
+	background-color: #559955;
+	right: 40px;
+	bottom: 40px; /* oh, nice, the height of #ground! */
+	width: 200px;
+	height: 20px;
+}
